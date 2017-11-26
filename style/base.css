@@ -1,0 +1,26 @@
+body,ul,li,a,img,input{
+    margin:0;
+    padding:0;
+}
+ul,ol,li{
+    list-style:none;
+}
+a:link,a:visited{
+    color:#444;
+    text-decoration:none;
+}
+a:hover{
+    color:red;
+}
+body{
+    font-size:12px;
+    font-family:Arial,宋体;
+}
+img{
+    border:0;
+}
+html,body{
+    height: 100%;  
+    width: 100%;
+    overflow: hidden; 
+}
