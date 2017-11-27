@@ -33,22 +33,22 @@ img{
     overflow: hidden;
 }
 #aboutMe{
-    background-color: #109085;
+    background-color: #08aba6;
 }
 #demand{
-    background-color: #4d5e8f;
+    background-color: #109085;
 }
 #experience{
-    background-color: #109085;
+    background-color: #08aba6;
 }
 #technology{
-    background-color: #4d5e8f;
-}
-#works{
     background-color: #109085;
 }
+#works{
+    background-color: #08aba6;
+}
 #contact{
-    background-color: #4d5e8f;
+    background-color: #08aba6;
 }
 #welcomeTitle{
     position: absolute;
@@ -64,6 +64,7 @@ img{
     font-weight: 400;
     font-size:60px;
     margin:50px 0 30px;
+    
 }
 #nav-bar{
     margin-bottom:0px;
@@ -80,8 +81,12 @@ img{
 .aboutMe{
     max-width: 1200px!important;
 }
-.section>h1{
+.list-group{
+    margin: 0 auto;
+}
+.section>h2{
     margin-bottom: 50px;
+    color: #fafafa;
 }
 .info-list>li{
     display: inline-block;
@@ -94,10 +99,6 @@ img{
     width: 90px;
     height: 90px;
     cursor: pointer;
-    -webkit-transition: background .2s,-webkit-transform ease-out .1s;
-    transition: background .2s,-webkit-transform ease-out .1s;
-    transition: transform ease-out .1s,background .2s;
-    transition: transform ease-out .1s,background .2s,-webkit-transform ease-out .1s;
     background: rgba(255,255,255,.1);
     border-radius: 50%;
     position: relative;
@@ -116,4 +117,9 @@ img{
     margin-top: 10px;
     font-size: 16px;
     color: #ffffff;
+}
+.list-group-item{
+    background-color: rgba(255,255,255,.1)!important;
+    border: 1px solid rgba(255,255,255,.1)!important;
+    color: #ffffff!important;
 }
