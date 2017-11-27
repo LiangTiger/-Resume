@@ -52,3 +52,18 @@ img{
     font-size:60px;
     margin:50px 0 30px;
 }
+#nav-bar{
+    margin-bottom:0px;
+}
+.floatleft{
+    float: left
+}
+.floatright{
+    float: right
+}
+#nav-bar.fixed{
+    position:fixed;
+    width: 100%;
+    top:0;
+    z-index: 1030;
+}
