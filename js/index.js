@@ -1,11 +1,11 @@
 $(function(){
-    top1=$("#aboutMe").offset().top-52;
-    top2=$("#demand").offset().top-100;
-    top3=$("#experience").offset().top-100;
-    top4=$("#technology").offset().top-100;
-    top5=$("#works").offset().top-100;
-    top6=$("#contact").offset().top-100;
     $(window).scroll(function(){
+        top1=$("#aboutMe").offset().top-52;
+        top2=$("#demand").offset().top-100;
+        top3=$("#experience").offset().top-100;
+        top4=$("#technology").offset().top-100;
+        top5=$("#works").offset().top-100;
+        top6=$("#contact").offset().top-100;
         var s=$(window).scrollTop()
         s>top1?$("#nav-bar").addClass("fixed"):$("#nav-bar").removeClass("fixed")
         if(s>top1&&s<top2){
@@ -39,4 +39,5 @@ $(function(){
             scrollTop:_top
         },500)
     }
+  
 })
