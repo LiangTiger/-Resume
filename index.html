@@ -14,7 +14,7 @@
     <div class="content">
     <section id="welcome" class="section"></section>
         <div id='welcomeTitle'>
-                <h1>你必须很努力,才能看起来是毫不费力</h1>
+                <h1>为人生更自由</h1>
                 <h2>我是一名前端工程师</h2>
         </div>
         <nav id="nav-bar" class="navbar navbar-default navbar-inverse">
@@ -31,17 +31,15 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav  navbar-right">
                             <li class="active"><a href="#">关于我</a></li>
-                            <li><a href="#">求职意向</a></li>
-                            <li><a href="#">个人经历</a></li>
                             <li><a href="#">技术掌握</a></li>
                             <li><a href="#">项目经验</a></li>
-                            <li><a href="#">联系方式</a></li>
+                            <li><a href="#">给我留言</a></li>
                         </ul>
                         
                     </div>
             </div>
         </nav>     
-    <section id="aboutMe"class="section sectionLi">
+    <section id="aboutMe"class="section fontColor">
             <h2>关于我</h2>
         <div class="container">
             <ul class="info-list">
@@ -73,35 +71,73 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 info-content">
                     <ul class="list-group">
-                         <li class="list-group-item">Cras justo odio</li>
-                         <li class="list-group-item">Dapibus ac facilisis in</li>
-                         <li class="list-group-item">Morbi leo risus</li>
-                         <li class="list-group-item">Porta ac consectetur ac</li>
-                         <li class="list-group-item">Vestibulum at eros</li>
+                         <a class="list-group-item">姓名：梁庭嘉</a>
+                         <a class="list-group-item">邮箱:740959030@qq.com</a>
+                         <a class="list-group-item">电话:1766611934</a>
+                         <a href='https://github.com/LiangTiger'target='_blank' class="list-group-item">Github：https://github.com/LiangTiger</a>
+                         <a href='http://thatsummer.cn/download/resume.pdf'target='_blank' class="list-group-item">简历：点击下载</a>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="demand" class="section sectionLi">
-            <h1>求职意向</h1>
+    <section id="technology"class="section">
+            <h2>技术掌握</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 info-content">
+                        <canvas id="myChart" width="500px" height="500px"></canvas>
+                    </div>
+                </div>
+                  </div>
+            </div>
     </section>
-    <section id="experience"class="section sectionLi">
-            <h1>个人经历</h1>
+    <section id="works"class="section fontColor">
+            <h2>项目经验</h2>
+            <div class="container">
+                <ul>
+                    <li>
+                        <div class="time">时间</div>
+                        <div class="list-group">
+                                <a href="#" class="list-group-item active">
+                                  <h4 class="list-group-item-heading">List group item heading</h4>
+                                  <p class="list-group-item-text">...</p>
+                                </a>
+                        </div>
+                    </li>
+                    <li>
+                            <div class="time">时间</div>
+                            <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                      <h4 class="list-group-item-heading">List group item heading</h4>
+                                      <p class="list-group-item-text">...</p>
+                                    </a>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="time">时间</div>
+                            <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                      <h4 class="list-group-item-heading">List group item heading</h4>
+                                      <p class="list-group-item-text">...</p>
+                                    </a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
     </section>
-    <section id="technology"class="section sectionLi">
-            <h1>技术掌握</h1>
-    </section>
-    <section id="works"class="section sectionLi">
-            <h1>项目经验</h1>
-    </section>
-    <section id="contact"class="section sectionLi">
-            <h1>联系方式</h1>
+    <section id="contact"class="section">
+            <h2>给我留言</h2>
+            <div class="container">
+            <div id="SOHUCS" ></div> 
+            </div>
     </section>
     <footer></footer>
     </div>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/comment.js"></script>
 </body>
 </html>
