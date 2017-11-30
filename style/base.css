@@ -3,7 +3,7 @@ body,ul,li,a,img,input{
     padding:0;
 }
 ul,ol,li{
-    list-style:none;
+    /* list-style:none; */
 }
 a:link,a:visited{
     color:#444;
@@ -125,6 +125,10 @@ img{
 .list-group{
     margin-top:20px;
 }
-#work>ul{
-    list-style-image: 
+.expList{
+    list-style-image: url('../image/list-image.png')!important;
+    list-style-type:square;
+}
+.time{
+    text-align: left;
 }

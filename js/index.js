@@ -63,4 +63,40 @@ $(function () {
             }
         })
     }
+    $.ajax({
+        url:"../json/exp.json",
+        type:'get',
+        dataTypt:'json',
+        error:erryFunction,
+        success:succFunction
+    })
+    function erryFunction(){
+        alert("请求错误")
+    }
+    function succFunction(data){
+        console.log(data);
+        if(data.status==0){
+            console.log(123)
+            var contents=data.result;
+            var html='';
+            for(var i in contents){
+                console.log(contents[i].time)
+                html+= `<li>
+                <div class="time">${contents[i].time}</div>
+                <div class="list-group">
+                        <a  class="list-group-item active">
+                        <h4 class="list-group-item-heading">${contents[i].title}</h4>
+                        <p class="list-group-item-text">${contents[i].content}</p>
+                        </a>
+                </div>
+            </li>`
+            }
+            var expList=$('.expList');
+            expList.html(html);
+        }else{
+            console.log('erro')
+        }
+
+        
+    }
 })
