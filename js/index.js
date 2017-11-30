@@ -19,7 +19,6 @@ $(function () {
     })
     $('.nav>li').bind('click', function () {
         var index = $(this).index();
-        console.log(index)
         _top = $(".section").eq(index + 1).offset().top;
         moveTo();
     })
@@ -64,23 +63,20 @@ $(function () {
         })
     }
     $.ajax({
-        url:"../json/exp.json",
+        url:"../exp.json",
         type:'get',
         dataTypt:'json',
         error:erryFunction,
         success:succFunction
     })
     function erryFunction(){
-        alert("请求错误")
+        console.log("请求错误")
     }
     function succFunction(data){
-        console.log(data);
         if(data.status==0){
-            console.log(123)
             var contents=data.result;
             var html='';
             for(var i in contents){
-                console.log(contents[i].time)
                 html+= `<li>
                 <div class="time">${contents[i].time}</div>
                 <div class="list-group">
@@ -95,8 +91,6 @@ $(function () {
             expList.html(html);
         }else{
             console.log('erro')
-        }
-
-        
+        } 
     }
 })
